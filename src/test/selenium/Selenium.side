@@ -1,0 +1,144 @@
+{
+  "id": "a7bdd610-bd94-4743-9e48-1b1aeacd137b",
+  "version": "2.0",
+  "name": "Selenium",
+  "url": "https://duckduckgo.com",
+  "tests": [{
+    "id": "81ec3cfe-4c14-4e77-9e23-bf77e4fc700d",
+    "name": "Recherche test",
+    "commands": [{
+      "id": "91020298-3683-4c88-8f9b-f23b2a026db4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e741f0b-ad37-4ce7-9760-4e7b1b0d4338",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "782x831",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "341058d9-30d7-4322-9a39-46cce6ee77da",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_form_input_homepage",
+      "targets": [
+        ["id=search_form_input_homepage", "id"],
+        ["name=q", "name"],
+        ["css=#search_form_input_homepage", "css:finder"],
+        ["xpath=//input[@id='search_form_input_homepage']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form_homepage']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86130805-a30b-408c-ae2e-d15935bc2ce3",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_form_input_homepage",
+      "targets": [
+        ["id=search_form_input_homepage", "id"],
+        ["name=q", "name"],
+        ["css=#search_form_input_homepage", "css:finder"],
+        ["xpath=//input[@id='search_form_input_homepage']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form_homepage']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "selenium"
+    }, {
+      "id": "f974469f-7632-4445-b8ef-2f5fc52bc822",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search_form_input_homepage",
+      "targets": [
+        ["id=search_form_input_homepage", "id"],
+        ["name=q", "name"],
+        ["css=#search_form_input_homepage", "css:finder"],
+        ["xpath=//input[@id='search_form_input_homepage']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form_homepage']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "829816a5-eddc-4c80-b1a2-81cfe0a1d583",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sélénium — Wikipédia",
+      "targets": [
+        ["linkText=Sélénium — Wikipédia", "linkText"],
+        ["css=#r1-1 .result__a", "css:finder"],
+        ["xpath=//div[@id='r1-1']/div/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://fr.wikipedia.org/wiki/S%C3%A9l%C3%A9nium')]", "xpath:href"],
+        ["xpath=//div[3]/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sélénium — Wikipédia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "17d9b77f-c0df-4c16-ab63-f39641fb28e3",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_form_input",
+      "targets": [
+        ["id=search_form_input", "id"],
+        ["name=q", "name"],
+        ["css=#search_form_input", "css:finder"],
+        ["xpath=//input[@id='search_form_input']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9473d33-3b52-4fa8-9be9-8c0fd257cce3",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_form_input",
+      "targets": [
+        ["id=search_form_input", "id"],
+        ["name=q", "name"],
+        ["css=#search_form_input", "css:finder"],
+        ["xpath=//input[@id='search_form_input']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "selenium test"
+    }, {
+      "id": "6d41f495-1d66-49f1-ab58-ffa33fcc120b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search_form_input",
+      "targets": [
+        ["id=search_form_input", "id"],
+        ["name=q", "name"],
+        ["css=#search_form_input", "css:finder"],
+        ["xpath=//input[@id='search_form_input']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8afc0bad-f949-41e5-88fd-5313d33fd1e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header__search-wrap",
+      "targets": [
+        ["css=.header__search-wrap", "css:finder"],
+        ["xpath=//div[@id='header']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "310ab6e8-6896-4cad-b8c0-fcc126473f73",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["81ec3cfe-4c14-4e77-9e23-bf77e4fc700d"]
+  }],
+  "urls": ["https://duckduckgo.com/"],
+  "plugins": []
+}
